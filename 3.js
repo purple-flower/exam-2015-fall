@@ -8,11 +8,26 @@
 // 'Radius: 4, Circumference: 25.132741228718345, Area: 50.26548245743669'
 
 
+function Circle(r) {
+  this.r = r;
+  this.circle = [];
+
+  this.getCircumference = function() {
+    var currentCircumference = 2*r*Math.PI;
+  };
+
+  this.getArea = function() {
+    var currentArea = r*r*Math.PI;
+  }
+
+  this.toString() {
+  this.grade.push({radius: r, circumference : currentCircumference, area: currentArea})
+  string(this.circle);
+  }
+}
 
 
-
-
-
-
-
-
+var firstCircle = new Circle(4);
+console.log(firstCircle.getCircumference());
+console.log(firstCircle.getArea());
+console.log(firstCircle.toString(););

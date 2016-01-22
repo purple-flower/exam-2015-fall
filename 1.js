@@ -4,7 +4,13 @@
 // and returns a new array with the same length but all,
 // of it's elements are the triple of the original array's elements!
 
-
+function tripleEachElement(array) {
+  var output = [];
+  array.forEach(function(element) {
+    output.push(element*3);
+  });
+  return output;
+}
 
 
 
