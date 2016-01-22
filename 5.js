@@ -33,8 +33,8 @@ function CarStore(cars) {
     return currentOldestCar.type;
   };
 
-  this.deleteCarByType = function(carType) {
-    var index = this.cars.indexOf(carType);
+  this.deleteCarByType = function(t) {
+    var index = this.cars.indexOf(t);
 
     this.cars.splice(index,1);
     return this.cars;
