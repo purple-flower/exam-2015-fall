@@ -33,13 +33,9 @@ function CarStore(cars) {
     return currentOldestCar.type;
   };
 
-  this.deleteCarByType(carType) {
-    var index = 0;
-    this.cars.forEach(function() {
-      if (this.cars[i].type === carType) {
-        index = i;
-      }
-    })
+  this.deleteCarByType = function(carType) {
+    var index = this.cars.indexOf(carType);
+
     this.cars.splice(index,1);
     return this.cars;
   };
@@ -57,6 +53,7 @@ var cars = [
 ];
 
 var carStore = new CarStore(cars);
+
 
 carStore.addCar('Smart', 18000, 2011);
 console.log(carStore.getSumPrice()); // 122000

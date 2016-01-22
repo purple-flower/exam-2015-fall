@@ -10,18 +10,18 @@
 
 function Circle(r) {
   this.r = r;
-  this.circle = [];
+  this.circle = {};
 
   this.getCircumference = function() {
-    var currentCircumference = 2*r*Math.PI;
+    return 2*r*Math.PI;
   };
 
   this.getArea = function() {
-    var currentArea = r*r*Math.PI;
-  }
+    return r*r*Math.PI;
+  };
 
-  this.toString() {
-  this.grade.push({radius: r, circumference : currentCircumference, area: currentArea})
+  this.toString= function() {
+
   string(this.circle);
   }
 }
@@ -30,4 +30,4 @@ function Circle(r) {
 var firstCircle = new Circle(4);
 console.log(firstCircle.getCircumference());
 console.log(firstCircle.getArea());
-console.log(firstCircle.toString(););
+console.log(firstCircle.toString());

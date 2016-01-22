@@ -7,9 +7,7 @@
 function countLetters(word) {
   var output = {};
   for (var i = 0; i < word.length; i++) {
-    if (!(word[i] in output)) {
-      output.push(word[i])
-    }
+    if (word[i] )
   }
 
   return output;
