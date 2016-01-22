@@ -23,8 +23,9 @@ var cars = [
 
 var carStore = new CarStore(cars);
 
-cars.addCar('Smart', 18000, 2011);
-console.log(cars.getSumPrice()); // 122000 
-console.log(cars.getOldestCarType()); // 'Trabant'
-cars.deleteCarByType('Ferrari');
-console.log(cars.getSumPrice()); // 82000 
+carStore.addCar('Smart', 18000, 2011);
+console.log(carStore.getSumPrice()); // 122000 
+console.log(carStore.getOldestCarType()); // 'Trabant'
+carStore.deleteCarByType('Ferrari');
+console.log(carStore.getSumPrice()); // 82000 
+
